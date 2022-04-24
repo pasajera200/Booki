@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booki</title>
     <!--Fichiers CSS-->
-    <link rel="stylesheet" href="CSS/style.css"/> 
-</head>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!--Icones Fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/34b89093af.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-
-<body>
+  <body>
+    <!--Barre de navigation-->
     <header>
       <nav>
-        <img id="logo" src="assets/images/logo/Booki.png" alt="logo Booki">
+        <img id="logo" src="assets/images/logo/Booki.png" alt="logo Booki" />
         <div class="subnav">
-        <a href="">Hébergements</a>
-        <a href="">Activités</a>
+          <a href="">Hébergements</a>
+          <a href="">Activités</a>
         </div>
       </nav>
     </header>
-</body>
 
+    <main class="page">
+      <!--Barre de recherche et entête-->
+
+      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+      <p>En plein centre ville ou en pleine nature</p>
+
+      <div class="BarreRecherche">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Marseille, France" />
+        <button disabled="disabled">Rechercher</button>
+      </div>
+    </main>
+  </body>
 </html>
