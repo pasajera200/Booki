@@ -128,6 +128,7 @@ nav a:hover {
   margin: 20px 0;
   gap: 1rem;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 .filtres .fa-solid {
   color: blue;
@@ -165,4 +166,35 @@ nav a:hover {
 
 #animaux_autorisés {
   flex-basis: 14rem;
+}
+
+/*info logements*/
+.info_logements {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.info_logements .fa-info {
+  color: blue;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid darkgrey;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*footer*/
+footer {
+  background-color: lightgrey;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  font-size: smaller;
+  gap: 1rem;
+  padding: 0 0 0 1rem;
+  flex-wrap: wrap;
 }
