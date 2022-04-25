@@ -74,13 +74,13 @@ nav a:hover {
 
 .BarreRecherche > * {
   padding: 1rem 1.2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .BarreRecherche i {
   background-color: lightgrey;
   border-radius: 1rem 0 0 1rem;
-  padding: 18px;
+  padding: 18.5px;
 }
 
 .BarreRecherche input {
@@ -116,5 +116,53 @@ nav a:hover {
   .fa.fa-search {
     display: inline;
     background-color: inherit;
+    padding: 17px;
   }
+}
+
+/*FILTRES*/
+
+#partiefiltres {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.filtres .fa-solid {
+  color: blue;
+  background-color: lightblue;
+  padding: 1rem;
+  border-radius: 50%;
+  margin: -1px;
+}
+
+.filtres {
+  border: 1px solid lightgrey;
+  border-radius: 2rem;
+}
+
+.filtres span {
+  font-weight: bold;
+}
+
+#partiefiltres span {
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+#économique {
+  flex-basis: 11rem;
+}
+
+#familial {
+  flex-basis: 9rem;
+}
+
+#romantique {
+  flex-basis: 11rem;
+}
+
+#animaux_autorisés {
+  flex-basis: 14rem;
 }
