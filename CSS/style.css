@@ -5,6 +5,11 @@
   font-family: "Raleway", "sans-serif";
 }
 
+:root {
+  --blue: #0065fc;
+  --lightblue: #deebff;
+  --lightgrey: #f2f2f2;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -16,6 +21,7 @@ nav {
   align-items: center;
   justify-content: flex-end;
   flex-wrap: wrap;
+  width: 96%;
 }
 
 nav a {
@@ -24,7 +30,7 @@ nav a {
 }
 
 nav a:hover {
-  border-top-color: #0065fc;
+  border-top-color: var(--blue);
 }
 
 .subnav {
@@ -32,7 +38,7 @@ nav a:hover {
 }
 
 .subnav a:hover {
-  color: #0065fc;
+  color: var(--blue);
 }
 
 #logo {
@@ -51,7 +57,7 @@ nav a:hover {
   }
 
   .subnav a:hover {
-    border-bottom-color: #0065fc;
+    border-bottom-color: var(--blue);
     border-top-color: transparent;
   }
 }
@@ -78,14 +84,14 @@ nav a:hover {
 }
 
 .BarreRecherche i {
-  background-color: lightgrey;
+  background-color: var(--lightgrey);
   border-radius: 1rem 0 0 1rem;
   padding: 18.5px;
 }
 
 .BarreRecherche input {
   flex-basis: 16rem;
-  border: 1px solid lightgrey;
+  border: 1px solid var(--lightgrey);
   font-weight: bold;
   overflow: auto;
 }
@@ -95,7 +101,7 @@ nav a:hover {
 }
 
 .BarreRecherche button {
-  background-color: #0065fc;
+  background-color: var(--blue);
   color: white;
   font-weight: bold;
   border-radius: 0 1rem 1rem 0;
@@ -131,7 +137,7 @@ nav a:hover {
   gap: 1rem;
 }
 .filtres .fa-solid {
-  color: blue;
+  color: var(--blue);
   background-color: lightblue;
   padding: 1rem;
   border-radius: 50%;
@@ -139,7 +145,7 @@ nav a:hover {
 }
 
 .filtres {
-  border: 1px solid lightgrey;
+  border: 1px solid var(--lightgrey);
   border-radius: 2rem;
 }
 
@@ -176,7 +182,7 @@ nav a:hover {
 }
 
 .info_logements .fa-info {
-  color: blue;
+  color: var(--blue);
   width: 2rem;
   height: 2rem;
   border: 1px solid darkgrey;
@@ -185,16 +191,47 @@ nav a:hover {
   align-items: center;
   justify-content: center;
 }
+/*hébergements*/
+.hébergements {
+  display: flex;
+  gap: 1rem;
+  margin: 20px 50px 20px 0;
+}
+
+.hébergements div {
+  background-color: var(--lightgrey);
+}
+
+.Marseille {
+  flex-basis: 66%;
+}
+
+.Populaires {
+  flex-basis: 33%;
+}
+
+.Marseille,
+.Populaires {
+  border-radius: 1rem 1rem 1rem 1rem;
+}
 
 /*footer*/
-footer {
-  background-color: lightgrey;
+.footer {
+  background-color: var(--lightgrey);
   width: 100%;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
   font-size: smaller;
-  gap: 1rem;
-  padding: 0 0 0 1rem;
-  flex-wrap: wrap;
+  border: 2px;
+  padding: 20px;
+  margin: 40px 10px 20px 0;
+}
+
+.footer div {
+  justify-content: flex-end;
+}
+
+#A_propos,
+#Nos_hébergements,
+#Assistance {
+  flex-basis: 33%;
 }
