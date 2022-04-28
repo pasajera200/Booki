@@ -43,9 +43,10 @@ nav a:hover {
 
 #logo {
   margin-right: auto;
+  padding: 0 0 0 2rem;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .subnav {
     flex-basis: 100%;
   }
@@ -63,11 +64,11 @@ nav a:hover {
 }
 
 /*main*/
-.page {
+#page {
   padding: 0 2rem;
 }
 
-.page h1 .page p {
+#page h1 #page p {
   margin-bottom: 1rem;
 }
 
@@ -114,7 +115,7 @@ nav a:hover {
   display: none;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .BarreRecherche .buttonblanc {
     display: none;
   }
@@ -158,16 +159,13 @@ nav a:hover {
   padding: 0.5rem;
 }
 
-#économique {
+#économique,
+#romantique {
   flex-basis: 11rem;
 }
 
 #familial {
   flex-basis: 9rem;
-}
-
-#romantique {
-  flex-basis: 11rem;
 }
 
 #animaux_autorisés {
@@ -192,14 +190,17 @@ nav a:hover {
   justify-content: center;
 }
 /*hébergements*/
-.hébergements {
+.hebergements {
   display: flex;
+  justify-content: flex-end;
   gap: 1rem;
   margin: 20px 50px 20px 0;
 }
 
-.hébergements div {
+.hebergements > div {
   background-color: var(--lightgrey);
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .Marseille {
@@ -213,6 +214,69 @@ nav a:hover {
 .Marseille,
 .Populaires {
   border-radius: 1rem 1rem 1rem 1rem;
+  padding: 20px;
+}
+
+.hebergement_items {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.hebergementcard {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.2rem;
+  box-shadow: 0 0 16px #0000002e;
+  min-width: 2rem;
+  flex-basis: calc(33%-1rem);
+  flex-grow: 1;
+}
+.image_hebergement_card img {
+  border-radius: 1rem 1rem 0 0;
+  height: 9rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  padding: 1px;
+}
+
+.hebergementcard p,
+.hebergementcard h3,
+.popular-description p,
+.popular-description h3 {
+  margin: 0.2rem;
+  padding: 0 0.5rem;
+  font-size: medium;
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.grey {
+  color: darkgrey;
+}
+
+.hebergements .hebergements_populaires {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hebergements h3 {
+  flex-basis: 100%;
+}
+@media (max-width: 768px) {
+  .hebergements {
+    flex-direction: column-reverse;
+  }
+
+  .hebergements .hebergements_populaires {
+    flex-direction: row;
+  }
 }
 
 /*footer*/
