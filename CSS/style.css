@@ -42,11 +42,12 @@ nav a:hover {
 }
 
 #logo {
+  height: 45px;
   margin-right: auto;
   padding: 0 0 0 2rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 356px) and (max-width: 767px) {
   .subnav {
     flex-basis: 100%;
   }
@@ -60,6 +61,13 @@ nav a:hover {
   .subnav a:hover {
     border-bottom-color: var(--blue);
     border-top-color: transparent;
+  }
+
+  #logo {
+    margin: auto;
+    margin-top: 30px;
+    padding-left: 40px;
+    height: 50px;
   }
 }
 
@@ -188,95 +196,6 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-/*hébergements*/
-.hebergements {
-  display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
-  margin: 20px 50px 20px 0;
-}
-
-.hebergements > div {
-  background-color: var(--lightgrey);
-  padding: 1rem;
-  border-radius: 1rem;
-}
-
-.Marseille {
-  flex-basis: 66%;
-}
-
-.Populaires {
-  flex-basis: 33%;
-}
-
-.Marseille,
-.Populaires {
-  border-radius: 1rem 1rem 1rem 1rem;
-  padding: 20px;
-}
-
-.hebergement_items {
-  display: flex;
-  justify-content: space-around;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-}
-.hebergementcard {
-  background-color: white;
-  border-radius: 1rem;
-  padding: 0.2rem;
-  box-shadow: 0 0 16px #0000002e;
-  min-width: 2rem;
-  flex-basis: calc(33%-1rem);
-  flex-grow: 1;
-}
-.image_hebergement_card img {
-  border-radius: 1rem 1rem 0 0;
-  height: 9rem;
-  width: 100%;
-  object-fit: cover;
-  object-position: top;
-  padding: 1px;
-}
-
-.hebergementcard p,
-.hebergementcard h3,
-.popular-description p,
-.popular-description h3 {
-  margin: 0.2rem;
-  padding: 0 0.5rem;
-  font-size: medium;
-}
-
-.blue {
-  color: var(--blue);
-}
-
-.grey {
-  color: darkgrey;
-}
-
-.hebergements .hebergements_populaires {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.hebergements h3 {
-  flex-basis: 100%;
-}
-@media (max-width: 768px) {
-  .hebergements {
-    flex-direction: column-reverse;
-  }
-
-  .hebergements .hebergements_populaires {
-    flex-direction: row;
-  }
 }
 
 /*footer*/
