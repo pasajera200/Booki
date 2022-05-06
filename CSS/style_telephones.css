@@ -1,0 +1,33 @@
+@media screen and (max-width: 767px) /*Pour les téléphones*/ {
+  .subnav {
+    flex-basis: 100%;
+  }
+
+  .subnav a {
+    flex-basis: 50%;
+    text-align: center;
+    border-bottom: 3px solid lightgrey;
+  }
+
+  .subnav a:hover {
+    border-bottom-color: var(--blue);
+    border-top-color: transparent;
+  }
+
+  #logo {
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 40px;
+    height: 50px;
+  }
+
+  .BarreRecherche .buttonblanc {
+    display: none;
+  }
+
+  .fas.fa-search {
+    display: inline;
+    background-color: inherit;
+    padding: 17px;
+  }
+}
