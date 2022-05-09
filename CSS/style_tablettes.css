@@ -1,15 +1,5 @@
 @media screen and (max-width: 991px) and (min-width: 768px) /*Pour les tablettes*/ {
   .buttonblanc {
-    display: none;
-  }
-
-  .buttonblanc {
-  }
-
-  .fas.fa-search {
-    display: inline;
-    background-color: inherit;
-    padding: 17px;
   }
 
   .marseille_populaires {
@@ -53,6 +43,8 @@
     margin-bottom: 10px;
   }
 
+  .populaires-card {
+  }
   .footer {
     flex-direction: column;
   }

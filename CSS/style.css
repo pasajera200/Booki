@@ -168,13 +168,6 @@ nav a:hover {
 }
 
 /*Hébergements*/
-.marseille_conteneur {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-around;
-  margin-bottom: 1rem;
-}
 
 .marseille_populaires {
   width: 98%;
@@ -183,9 +176,16 @@ nav a:hover {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   gap: 2rem;
 }
-
+.marseille_conteneur {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
 .marseille_populaires h3 {
   font-size: 20px;
 }
@@ -214,7 +214,7 @@ nav a:hover {
   height: 250px;
   background-color: white;
   border-radius: 1.5rem;
-  padding: 0.2rem;
+  padding: 0.3rem;
   box-shadow: 0 0 16px #0000002e;
   flex-grow: 1;
   flex-basis: 30%;
@@ -260,23 +260,31 @@ nav a:hover {
 .populaires {
   flex-basis: 33%;
   background-color: #f2f2f2;
-  padding: 2%;
+  padding: 1%;
   border-radius: 15px 15px 15px 15px;
+}
+
+.populaires_conteneur {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
 }
 
 .info_populaires {
   display: flex;
-  flex: 1.5;
   flex-direction: column;
-  gap: 6px;
+  gap: 10px;
 }
 
 .titre_populaires {
   display: flex;
   padding-right: 0px;
   justify-content: baseline;
+  margin-left: 7%;
+  padding-bottom: 0.5rem;
   align-items: space-between;
-  border: 5px solid blue;
 }
 
 .titre_populaires i {
@@ -287,44 +295,73 @@ nav a:hover {
 }
 
 .populaires_card {
-  width: 100%;
+  width: 85%;
   height: 150px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: flex-startS;
   background-color: white;
   border-radius: 1.5rem;
-  padding: 0.2rem;
+  padding: 0.1rem;
+  padding-top: 0.2rem;
+  margin-left: 7%;
   box-shadow: 0 0 16px #0000002e;
   flex: 1;
   flex-basis: 30%;
   gap: 2rem;
-  min-width: 15rem;
+  min-width: 25rem;
+  max-height: 10rem;
 }
 
 .image_populaires {
   border-radius: 1.5rem 0 0 1.5rem;
-  height: 9rem;
-  width: 90%;
+  height: 9.2rem;
+  width: 85%;
+  margin-top: 1.5%;
+  margin-left: 1.5%;
   object-fit: cover;
   object-position: top;
 }
 
 .info_populaires {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+}
+.populaires_title {
+  font-weight: bold;
+  padding-top: 2%;
+  padding-bottom: 10%;
+  object-fit: fill;
+}
+
+.populaires_prix {
+}
+
+.starts {
+  padding-left: 0%;
 }
 
 .info_prix {
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
-  padding-right: 2rem;
+  font-weight: normal;
+  padding-top: 0.8rem;
+  gap: 2%;
+}
+
+/*Footer*/
+
+.footer {
+  background-color: var(--lightgrey);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: smaller;
+  padding: 1rem;
 }
 
 #A_propos,
 #Nos_hébergements,
 #Assistance {
   flex-basis: 33%;
+  margin-left: 1rem;
 }
