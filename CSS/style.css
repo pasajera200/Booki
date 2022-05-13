@@ -232,6 +232,7 @@ nav a:hover {
 
 .hebmarseille_prix {
   padding-left: 3%;
+  font-size: 14px;
   object-fit: fill;
 }
 
@@ -243,7 +244,7 @@ nav a:hover {
   color: var(--lightgrey);
 }
 
-.starts {
+.starts_marseille {
   display: flex;
   padding-left: 3%;
   padding-bottom: 1rem;
@@ -254,7 +255,7 @@ nav a:hover {
   height: 9rem;
   width: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: 50% 50%;
 }
 
 .populaires {
@@ -272,60 +273,62 @@ nav a:hover {
   justify-content: space-around;
 }
 
+.lien_populaires {
+  display: flex;
+}
+
 .info_populaires {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  margin-right: 20px;
+  margin-left: 3%;
   gap: 10px;
 }
 
+.populaires_prix {
+  font-size: 13.5px;
+}
 .titre_populaires {
+  width: 95%;
   display: flex;
-  padding-right: 0px;
-  justify-content: baseline;
-  margin-left: 7%;
+  justify-content: space-between;
+  margin-left: 5%;
   padding-bottom: 0.5rem;
-  align-items: space-between;
 }
 
-.titre_populaires i {
-  display: flex;
-  padding-left: 5rem;
-  padding-top: 0rem;
-  justify-content: center;
+.start_titre {
+  font-size: 21px;
+  padding-right: 7%;
 }
 
 .populaires_card {
-  width: 85%;
+  width: 90%;
   height: 150px;
+  max-height: 10rem;
+  min-width: 15px;
   display: flex;
   justify-content: flex-startS;
   background-color: white;
   border-radius: 1.5rem;
   padding: 0.1rem;
   padding-top: 0.2rem;
-  margin-left: 7%;
+  margin-left: 5%;
   box-shadow: 0 0 16px #0000002e;
   flex: 1;
   flex-basis: 30%;
   gap: 2rem;
-  min-width: 25rem;
-  max-height: 10rem;
 }
 
 .image_populaires {
   border-radius: 1.5rem 0 0 1.5rem;
   height: 9.2rem;
-  width: 85%;
+  width: 80%;
   margin-top: 1.5%;
   margin-left: 1.5%;
   object-fit: cover;
-  object-position: top;
 }
 
-.info_populaires {
-  display: flex;
-  flex-wrap: wrap;
-}
 .populaires_title {
   font-weight: bold;
   padding-top: 2%;
@@ -333,11 +336,9 @@ nav a:hover {
   object-fit: fill;
 }
 
-.populaires_prix {
-}
-
 .starts {
-  padding-left: 0%;
+  display: flex;
+  padding-top: 10%;
 }
 
 .info_prix {
@@ -348,8 +349,126 @@ nav a:hover {
   gap: 2%;
 }
 
-/*Footer*/
+/*Activités à Marseille*/
 
+.activites_marseille {
+  width: 98%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 15px 15px 15px 15px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 0.5%;
+  gap: 2rem;
+}
+
+.activites h3 {
+  font-size: 20px;
+  margin-left: 0.2%;
+}
+
+.activites_conteneur {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 520px;
+}
+
+.grand_card1,
+.grand_card2 {
+  width: 23%;
+  height: 440px;
+  margin-top: 10px;
+  margin-right: 2%;
+  background-color: white;
+  border-radius: 17px 17px 17px 17px;
+  box-shadow: 4px 4px 15px #e6e6e6;
+}
+
+.deux_cards {
+  gap: 1%;
+}
+
+.deuxpetites_card {
+  gap: 2%;
+}
+.deux_cards,
+.deuxpetites_card {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2%;
+}
+
+.moyenne_card {
+  width: 100%;
+  height: 265px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 17px 17px 17px 17px;
+  box-shadow: 4px 4px 15px #e6e6e6;
+}
+
+.moyennecard_image {
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.petite_card {
+  width: 100%;
+  height: 155px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 4px 4px 15px #e6e6e6;
+}
+
+.petitecard_image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.deux_petites1,
+.deux_petites2 {
+  width: 100%;
+  height: 210px;
+  margin-top: 12px;
+  margin-right: 25px;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 4px 4px 15px #e6e6e6;
+}
+
+.petitescards_image {
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+.infocard_marseille {
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-top: 13px;
+}
+
+.grandcard_image {
+  width: 100%;
+  height: 385px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+/*Footer*/
 .footer {
   background-color: var(--lightgrey);
   width: 100%;
