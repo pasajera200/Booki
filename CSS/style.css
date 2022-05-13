@@ -281,9 +281,7 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-right: 20px;
-  margin-left: 3%;
-  gap: 10px;
+  padding-left: 10%;
 }
 
 .populaires_prix {
@@ -303,7 +301,7 @@ nav a:hover {
 }
 
 .populaires_card {
-  width: 90%;
+  width: 80%;
   height: 150px;
   max-height: 10rem;
   min-width: 15px;
@@ -322,13 +320,16 @@ nav a:hover {
 
 .image_populaires {
   border-radius: 1.5rem 0 0 1.5rem;
-  height: 9.2rem;
-  width: 80%;
-  margin-top: 1.5%;
-  margin-left: 1.5%;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
+.images {
+  width: 40%;
+  height: 100%;
+  padding: 0.5%;
+}
 .populaires_title {
   font-weight: bold;
   padding-top: 2%;
