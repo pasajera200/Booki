@@ -23,8 +23,7 @@ a {
 }
 
 /*Body*/
-
-#page_complete {
+body {
   margin-left: 32px;
 }
 
@@ -38,7 +37,7 @@ nav {
 }
 
 nav a {
-  padding: 3rem;
+  padding: 48px;
   border-top: 3px solid transparent;
 }
 
@@ -83,7 +82,7 @@ nav a:hover {
 }
 
 .BarreRecherche input {
-  flex-basis: 16rem;
+  flex-basis: 256px;
   border: 1px solid var(--lightgrey);
   font-weight: bold;
   overflow: auto;
@@ -114,26 +113,33 @@ nav a:hover {
   display: flex;
   align-items: center;
   margin: 20px 0;
-  gap: 16px;
+  gap: 30px;
   flex-wrap: wrap;
-  gap: 16px;
 }
 
 .filtres .fa-solid {
   color: var(--blue);
   background-color: var(--lightblue);
-  padding: 18px;
   border-radius: 50%;
-  margin: -1px;
+  margin: -6px;
+  padding: 20px;
 }
 
-.fa-child-reaching {
-  font-size: 20px;
+.filtres .fa-child-reaching {
+  margin: -6.57px;
 }
 
 .filtres {
+  background-color: white;
   border: 1px solid var(--lightgrey);
-  border-radius: 32px;
+  border-radius: 30px;
+  padding: 0.4%;
+}
+
+.filtres,
+#economique,
+#familial {
+  padding: 0.3%;
 }
 
 .filtres span {
@@ -153,20 +159,23 @@ nav a:hover {
 
 .partiefiltres span {
   font-weight: bold;
-  padding: 8px;
+  padding: 15px;
 }
 
-#économique,
+#économique {
+  width: 10.2%;
+}
+
 #romantique {
-  flex-basis: 11rem;
+  width: 10%;
 }
 
 #familial {
-  flex-basis: 9rem;
+  width: 8%;
 }
 
-#animaux_autorisés {
-  flex-basis: 14rem;
+#animaux_autorises {
+  width: 12.5%;
 }
 
 /*info logements*/
@@ -261,7 +270,8 @@ nav a:hover {
 }
 
 .grey_start {
-  color: var(--lightgrey);
+  color: #d9d9d9;
+  padding-left: 2%;
 }
 
 .starts_marseille {
@@ -289,7 +299,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 32px;
   justify-content: space-around;
 }
 
@@ -330,7 +340,7 @@ nav a:hover {
   justify-content: flex-start;
   background-color: white;
   border-radius: 30px;
-  padding: 0.1rem;
+  padding: 1.6px;
   padding-top: 3.2px;
   box-shadow: 0px 5px 6px #f2f2f2;
   flex: 1;
@@ -432,7 +442,7 @@ nav a:hover {
   margin-right: 2%;
   background-color: white;
   border-radius: 17px 17px 17px 17px;
-  box-shadow: 0px 5px 6px var(--lightgrey);
+  box-shadow: 0px 5px 6px #f2f2f2;
   object-fit: cover;
 }
 
@@ -458,7 +468,7 @@ nav a:hover {
   margin-bottom: 10px;
   background-color: white;
   border-radius: 17px 17px 17px 17px;
-  box-shadow: 0px 5px 6px var(--lightgrey);
+  box-shadow: 0px 5px 6px #f2f2f2;
   object-fit: cover;
 }
 
@@ -476,8 +486,8 @@ nav a:hover {
   height: 170px;
   margin-top: 10px;
   background-color: white;
-  border-radius: 15px 15px 15px 15px;
-  box-shadow: 0px 5px 6px var(--lightgrey);
+  border-radius: 17px 17px 17px 17px;
+  box-shadow: 0px 5px 6px #f2f2f2;
 }
 
 .petitecard_image {
@@ -491,18 +501,18 @@ nav a:hover {
 
 .deux_petites {
   width: 100%;
-  height: 13.6rem;
+  height: 217.6px;
   margin-top: 12px;
   margin-right: 25px;
   background-color: white;
-  border-radius: 15px 15px 15px 15px;
-  box-shadow: 0px 5px 6px var(--lightgrey);
+  border-radius: 17px 17px 17px 17px;
+  box-shadow: 0px 5px 6px #f2f2f2;
   gap: 32px;
 }
 
 .petitescards_image {
   width: 100%;
-  height: 10.6rem;
+  height: 169.6px;
   object-fit: cover;
   object-position: center top;
   border-radius: 15px 15px 0px 0px;
@@ -517,7 +527,7 @@ nav a:hover {
 
 .grandcard_image {
   width: 100%;
-  height: 26.7rem;
+  height: 427.2px;
   object-fit: cover;
   object-position: bottom 50%;
   border-radius: 15px 15px 0px 0px;
@@ -531,6 +541,7 @@ nav a:hover {
   justify-content: space-evenly;
   font-size: smaller;
   padding: 16px;
+  padding-left: 3%;
   gap: 3%;
 }
 
