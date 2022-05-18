@@ -112,9 +112,14 @@ nav a:hover {
 .partiefiltres {
   display: flex;
   align-items: center;
-  margin: 20px 0;
+  padding: 20px 0;
   gap: 30px;
   flex-wrap: wrap;
+}
+
+.partiefiltres span {
+  font-weight: bold;
+  padding: 10px;
 }
 
 .filtres .fa-solid {
@@ -122,24 +127,14 @@ nav a:hover {
   background-color: var(--lightblue);
   border-radius: 50%;
   margin: -6px;
-  padding: 20px;
-}
-
-.filtres .fa-child-reaching {
-  margin: -6.57px;
+  padding: 16px;
 }
 
 .filtres {
   background-color: white;
   border: 1px solid var(--lightgrey);
   border-radius: 30px;
-  padding: 0.4%;
-}
-
-.filtres,
-#economique,
-#familial {
-  padding: 0.3%;
+  padding: 6px;
 }
 
 .filtres span {
@@ -155,27 +150,6 @@ nav a:hover {
 
 .filtres:hover i {
   background-color: var(--lightblue);
-}
-
-.partiefiltres span {
-  font-weight: bold;
-  padding: 15px;
-}
-
-#économique {
-  width: 10.2%;
-}
-
-#romantique {
-  width: 10%;
-}
-
-#familial {
-  width: 8%;
-}
-
-#animaux_autorises {
-  width: 12.5%;
 }
 
 /*info logements*/
@@ -208,6 +182,7 @@ nav a:hover {
   margin-bottom: 32px;
   gap: 32px;
 }
+
 .marseille_conteneur {
   display: flex;
   flex-wrap: wrap;
@@ -215,11 +190,13 @@ nav a:hover {
   justify-content: space-around;
   margin-bottom: 16px;
 }
+
 .marseille_populaires h3 {
   font-size: 20px;
 }
+
 .marseille {
-  flex-basis: 66%;
+  width: 66%;
   background-color: var(--lightgrey);
   padding: 2%;
   border-radius: 15px 15px 15px 15px;
@@ -289,7 +266,7 @@ nav a:hover {
 }
 
 .populaires {
-  flex-basis: 33%;
+  width: 33%;
   background-color: #f2f2f2;
   padding-left: 3%;
   border-radius: 15px 15px 15px 15px;
@@ -299,7 +276,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 50px;
   justify-content: space-around;
 }
 
@@ -311,11 +288,13 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding-left: 10%;
+  padding-top: 2%;
+  padding-left: 8%;
+  font-size: 16px;
 }
 
 .populaires_prix {
-  font-size: 13.5px;
+  font-size: 14px;
 }
 .titre_populaires {
   width: 95%;
@@ -334,18 +313,15 @@ nav a:hover {
 .populaires_card {
   width: 90%;
   height: 150px;
-  max-height: 160px;
+  max-height: 150px;
   min-width: 15px;
   display: flex;
   justify-content: flex-start;
   background-color: white;
   border-radius: 30px;
-  padding: 1.6px;
-  padding-top: 3.2px;
   box-shadow: 0px 5px 6px #f2f2f2;
   flex: 1;
-  flex-basis: 30%;
-  gap: 32px;
+  gap: 40px;
 }
 
 .image_populaires {
@@ -357,21 +333,9 @@ nav a:hover {
 }
 
 .images {
-  width: 40%;
+  width: 43%;
   height: 100%;
-  padding: 0.5%;
-}
-
-.images {
-  width: 40%;
-  height: 100%;
-  padding: 0.5%;
-}
-
-.images3 {
-  width: 40%;
-  height: 100%;
-  padding: 0.5%;
+  padding: 1%;
 }
 
 .populaires_title {
@@ -386,15 +350,7 @@ nav a:hover {
   padding-top: 10%;
 }
 
-.info_prix {
-  display: flex;
-  flex-direction: column;
-  font-weight: normal;
-  padding-top: 12.8px;
-  gap: 2%;
-}
-
-/* animation cards */
+/* animation cards Marseille/Populaires*/
 
 .card_marseille:hover,
 .populaires_card:hover {
@@ -533,6 +489,13 @@ nav a:hover {
   border-radius: 15px 15px 0px 0px;
 }
 
+/*Animation cards Activités à Marseille*/
+.petite_card {
+  transform: scale(1.03);
+  transition: ease 0.4s;
+  cursor: pointer;
+}
+
 /*Footer*/
 .footer {
   background-color: var(--lightgrey);
@@ -541,8 +504,7 @@ nav a:hover {
   justify-content: space-evenly;
   font-size: smaller;
   padding: 16px;
-  padding-left: 3%;
-  gap: 3%;
+  padding-left: 2%;
 }
 
 #A_propos,
