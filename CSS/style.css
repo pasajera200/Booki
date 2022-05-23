@@ -127,7 +127,11 @@ nav a:hover {
   background-color: var(--lightblue);
   border-radius: 50%;
   margin: -6px;
-  padding: 16px;
+  padding: 14px;
+}
+
+.fa-child-reaching {
+  font-size: 15px;
 }
 
 .filtres {
@@ -217,15 +221,14 @@ nav a:hover {
 
 .card_marseille {
   width: 33%;
-  height: 250px;
+  height: 230px;
   background-color: white;
-  border-radius: 30px;
-  padding: 4.8px;
+  border-radius: 20px;
+  padding: 3px;
   box-shadow: 0px 5px 6px var(--lightgrey);
   flex-grow: 1;
   flex-basis: 30%;
   gap: 32px;
-  min-width: 240px;
 }
 
 .hebmarseille_title {
@@ -255,11 +258,12 @@ nav a:hover {
   display: flex;
   padding-left: 3%;
   padding-bottom: 16px;
+  font-size: 14px;
 }
 
 .image_card {
-  border-radius: 24px 24px 0 0;
-  height: 144px;
+  border-radius: 20px 20px 0 0;
+  height: 130px;
   width: 100%;
   object-fit: cover;
   object-position: 50% 50%;
@@ -301,19 +305,23 @@ nav a:hover {
   display: flex;
   justify-content: space-between;
   padding-left: 1%;
-  padding-top: 7%;
   padding-bottom: 8px;
 }
 
-.start_titre {
+.titre_populaires h3 {
+  padding-top: 7%;
+}
+
+.icone_titre {
   font-size: 21px;
   padding-right: 7%;
+  padding-top: 5.9%;
 }
 
 .populaires_card {
   width: 90%;
   height: 150px;
-  max-height: 150px;
+  max-height: 140px;
   min-width: 15px;
   display: flex;
   justify-content: flex-start;
@@ -347,10 +355,11 @@ nav a:hover {
 
 .starts {
   display: flex;
-  padding-top: 10%;
+  padding-top: 9%;
+  font-size: 14px;
 }
 
-/* animation cards Marseille-Populaires*/
+/* animation cards Marseille/Populaires*/
 
 .card_marseille:hover,
 .populaires_card:hover {

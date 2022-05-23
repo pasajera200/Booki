@@ -1,50 +1,175 @@
-@media screen and (max-width: 991px) and (min-width: 768px) /*Pour les tablettes*/ {
-  .buttonblanc {
+@media screen and (max-width: 991px) /*Pour les tablettes*/ {
+  body {
+    margin-left: 20px;
   }
-
   .fas.fa-search {
     display: inline;
     background-color: inherit;
     padding: 17px;
   }
 
-  .marseille_populaires {
-    width: 100%;
-    height: 40%;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    margin-top: 2rem;
-    gap: 1rem;
+  .BarreRecherche .buttonblanc {
+    display: none;
   }
 
-  .marseille_conteneur {
-    font-size: 16px;
+  /*FILTRES*/
+  .partiefiltres {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
-  .marseille_populaires {
-    width: 100%;
-    height: 40%;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    margin-top: 2rem;
-    gap: 2rem;
+  /*Hébergements*/
+
+  .marseille {
+    width: 56%;
+  }
+
+  .populaires {
+    width: 44%;
   }
 
   .card_marseille {
-    width: 98%;
-    height: 200px;
-    font-size: 16px;
+    max-height: 170px;
+    min-width: 47.5%;
+  }
+
+  .image_card {
+    max-height: 93px;
+    min-width: 70%;
+  }
+
+  .marseille_populaires {
+    font-size: 13.5px;
+    gap: 20px;
   }
 
   .marseille_conteneur {
-    flex-basis: 100%;
+    gap: 16px;
+  }
+
+  .starts_marseille {
+    font-size: 13px;
+    padding-bottom: 2%;
+  }
+
+  .hebmarseille_prix {
+    font-size: 13px;
+  }
+  .populaires_card {
+    max-height: 130px;
+    min-width: 93%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 5px 6px #f2f2f2;
+    font-size: 12px;
+    gap: 40px;
+  }
+
+  .populaires_title {
+    font-size: 13.5px;
+  }
+
+  .populaires_prix {
+    font-size: 13px;
   }
 
   .starts {
-    margin-bottom: 10px;
+    font-size: 13px;
+    margin-bottom: 30px;
   }
 
-  .footer {
+  .populaires_conteneur {
+    gap: 40px;
+  }
+
+  .info_populaires {
+    padding: 0.8%;
+    padding-top: 3%;
+    padding-left: 2%;
+  }
+
+  /*Activités à Marseille*/
+
+  .activites_conteneur {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 1000px;
+    gap: 10px;
+    padding-bottom: 2%;
+  }
+
+  .grand_card {
+    width: 47%;
+    height: 478px;
+    margin-top: 10px;
+    margin-right: 2%;
+    background-color: white;
+    border-radius: 17px 17px 17px 17px;
+    box-shadow: 0px 5px 6px #f2f2f2;
+    object-fit: cover;
+  }
+
+  .grandcard_image {
+    width: 100%;
+    height: 427.2px;
+    object-fit: cover;
+    object-position: bottom 50%;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .deux_cards {
+    width: 47%;
+    display: flex;
     flex-direction: column;
+    gap: 10px;
+  }
+
+  .moyenne_card {
+    width: 100%;
+    height: 265px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 17px 17px 17px 17px;
+    box-shadow: 0px 5px 6px #f2f2f2;
+    object-fit: cover;
+  }
+
+  .moyennecard_image {
+    width: 100%;
+    height: 215px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    object-position: 100%;
+    object-fit: cover;
+  }
+
+  .petite_card {
+    width: 96%;
+    height: 180px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 17px 17px 17px 17px;
+    box-shadow: 0px 5px 6px #f2f2f2;
+    margin-left: 2%;
+  }
+
+  .petitecard_image {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    object-position: 0% 34%;
+    object-fit: cover;
+  }
+
+  .deuxpetites_card {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2%;
   }
 }
