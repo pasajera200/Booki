@@ -1,6 +1,12 @@
 @media screen and (max-width: 767px) /*Pour les téléphones*/ {
+  body {
+    margin-left: 3%;
+  }
+
   .subnav {
     flex-basis: 100%;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .subnav a {
@@ -17,17 +23,235 @@
   #logo {
     margin: auto;
     margin-top: 20px;
-    padding-left: 40px;
     height: 50px;
+    padding-right: 0;
   }
+
+  /*BarreRecherche*/
 
   .BarreRecherche .buttonblanc {
     display: none;
   }
 
+  .BarreRecherche button {
+    background-color: var(--blue);
+    color: white;
+    font-weight: bold;
+    border-radius: 0 16px 16px 0;
+    border: none;
+    cursor: pointer;
+    padding: 19px;
+  }
+
   .fas.fa-search {
     display: inline;
     background-color: inherit;
-    padding: 17px;
+    padding: 8px;
+  }
+
+  .BarreRecherche input {
+    flex-basis: 225px;
+    border: 1px solid var(--lightgrey);
+    font-weight: bold;
+    overflow: auto;
+    padding: 18.2px;
+  }
+
+  /*FILTRES*/
+
+  .partiefiltres {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    padding-top: 20px;
+    gap: 2px;
+  }
+
+  .filtres {
+    padding: 6px;
+    font-size: 16px;
+    padding-right: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .liste_filtres {
+    display: block;
+  }
+
+  /*HEBERGEMENTS*/
+
+  .marseille_populaires {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+
+  .marseille {
+    width: 100%;
+  }
+
+  .marseille h3 {
+    margin-left: 5px;
+  }
+
+  .populaires {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .populaires_conteneur {
+    gap: 10px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .titre_populaires {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+
+  .icone_titre {
+    padding-right: 4%;
+  }
+
+  .marseille {
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .marseille_conteneur {
+    padding: 10px;
+  }
+
+  .card_marseille {
+    width: 100%;
+    height: 250px;
+    max-height: 300px;
+    min-width: 100%;
+    border-radius: 20px;
+    padding: 3px;
+    box-shadow: 0px 5px 6px var(--lightgrey);
+    gap: 32px;
+  }
+
+  .image_card {
+    border-radius: 20px 20px 0 0;
+    height: 150px;
+    width: 100%;
+    max-height: none;
+    min-width: none;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  .Afficher_plus {
+    font-size: 16px;
+    padding-left: 3px;
+  }
+
+  /*Activités à Marseille*/
+
+  .activites h3 {
+    padding-left: 2%;
+    padding-top: 0.5%;
+  }
+
+  .activites_conteneur {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 1700px;
+    gap: 10px;
+    padding-bottom: 2%;
+    padding: 15px;
+  }
+
+  .grand_card {
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+  }
+
+  .grandcard_image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: bottom 50%;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .deux_cards {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .moyenne_card {
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 17px 17px 17px 17px;
+    box-shadow: 0px 5px 6px #f2f2f2;
+    object-fit: cover;
+  }
+
+  .moyennecard_image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    object-position: 100%;
+    object-fit: cover;
+  }
+
+  .petite_card {
+    width: 96%;
+    height: 250px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 17px 17px 17px 17px;
+    box-shadow: 0px 5px 6px #f2f2f2;
+    margin-left: 2%;
+    margin-bottom: 10px;
+  }
+
+  .petitecard_image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    object-position: 0% 34%;
+    object-fit: cover;
+  }
+
+  .deuxpetites_card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2%;
+  }
+
+  .petitescards_image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .deux_petites {
+    width: 100%;
+    height: 250px;
+  }
+
+  /*Footer*/
+  .footer {
+    flex-direction: column;
+    padding-left: 4%;
   }
 }

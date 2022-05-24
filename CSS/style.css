@@ -82,7 +82,7 @@ nav a:hover {
 }
 
 .BarreRecherche input {
-  flex-basis: 256px;
+  flex-basis: 190px;
   border: 1px solid var(--lightgrey);
   font-weight: bold;
   overflow: auto;
@@ -113,7 +113,8 @@ nav a:hover {
   display: flex;
   align-items: center;
   padding: 20px 0;
-  gap: 30px;
+  padding-top: 30px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -122,6 +123,10 @@ nav a:hover {
   padding: 10px;
 }
 
+.liste_filtres {
+  display: flex;
+  gap: 20px;
+}
 .filtres .fa-solid {
   color: var(--blue);
   background-color: var(--lightblue);
@@ -138,11 +143,12 @@ nav a:hover {
   background-color: white;
   border: 1px solid var(--lightgrey);
   border-radius: 30px;
-  padding: 6px;
+  padding: 5px;
 }
 
 .filtres span {
   font-weight: bold;
+  font-size: 14px;
 }
 
 /* animation filtres */
@@ -182,9 +188,8 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 32px;
+  margin-top: 25px;
   margin-bottom: 32px;
-  gap: 32px;
 }
 
 .marseille_conteneur {
