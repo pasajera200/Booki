@@ -3,7 +3,9 @@
     margin-left: 3%;
   }
 
+  /*Barre de navigation*/
   .subnav {
+    display: flex;
     flex-basis: 100%;
     padding-right: 0;
     padding-left: 0;
@@ -23,24 +25,19 @@
   #logo {
     margin: auto;
     margin-top: 20px;
-    height: 50px;
     padding-right: 0;
+  }
+
+  /*Main*/
+  #site {
+    padding-left: 3%;
+    margin-left: 3%;
   }
 
   /*BarreRecherche*/
 
   .BarreRecherche .buttonblanc {
     display: none;
-  }
-
-  .BarreRecherche button {
-    background-color: var(--blue);
-    color: white;
-    font-weight: bold;
-    border-radius: 0 16px 16px 0;
-    border: none;
-    cursor: pointer;
-    padding: 19px;
   }
 
   .fas.fa-search {
@@ -51,9 +48,6 @@
 
   .BarreRecherche input {
     flex-basis: 225px;
-    border: 1px solid var(--lightgrey);
-    font-weight: bold;
-    overflow: auto;
     padding: 18.2px;
   }
 
@@ -62,7 +56,6 @@
   .partiefiltres {
     align-items: flex-start;
     flex-wrap: wrap;
-    padding: 20px 0;
     padding-top: 20px;
     gap: 2px;
   }
@@ -83,15 +76,16 @@
 
   .marseille_populaires {
     flex-direction: column-reverse;
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .marseille {
     width: 100%;
+    padding: 0%;
   }
 
   .marseille h3 {
-    margin-left: 5px;
+    margin-left: 15px;
   }
 
   .populaires {
@@ -99,32 +93,67 @@
     border-radius: 0px;
   }
 
-  .populaires_conteneur {
-    gap: 25px;
-    padding-bottom: 30px;
-    padding-top: 10px;
-    padding-left: 10px;
+  .populaires_card {
+    width: 98%;
+    height: 150px;
+    max-height: 150px;
+    min-width: 90%;
+  }
+
+  .lien_populaires {
+    display: flex;
+    flex-direction: row;
   }
 
   .titre_populaires {
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
     padding-left: 3%;
     padding-bottom: 0px;
     padding-top: 0px;
   }
 
   .icone_titre {
-    padding-right: 4%;
+    padding-right: 2%;
   }
 
+  .image_populaires {
+    border-radius: 24px 0 0 24px;
+    height: 140px;
+  }
+
+  .images {
+    width: 43%;
+    height: 100%;
+    padding: 1%;
+  }
+
+  .info_populaires {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-left: 8%;
+    font-size: 16px;
+  }
+
+  .populaires_title {
+    font-weight: bold;
+    padding-top: 2%;
+    padding-bottom: 10%;
+    object-fit: fill;
+  }
+
+  .starts {
+    display: flex;
+    padding-top: 9%;
+    font-size: 14px;
+  }
   .marseille {
     width: 100%;
     background-color: transparent;
   }
 
   .marseille_conteneur {
+    padding-top: 0%;
     padding: 10px;
   }
 
@@ -136,15 +165,13 @@
     border-radius: 20px;
     padding: 3px;
     box-shadow: 0px 5px 6px var(--lightgrey);
-    gap: 32px;
+    gap: 20px;
   }
 
   .image_card {
     border-radius: 20px 20px 0 0;
     height: 150px;
     width: 100%;
-    max-height: none;
-    min-width: none;
     object-fit: cover;
     object-position: 50% 50%;
   }
@@ -164,7 +191,6 @@
   .activites_conteneur {
     display: flex;
     flex-direction: row;
-    width: 100%;
     height: 1700px;
     gap: 10px;
     padding-bottom: 2%;
@@ -181,7 +207,6 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
-    object-position: bottom 50%;
     border-radius: 15px 15px 0px 0px;
   }
 

@@ -59,6 +59,7 @@ nav a:hover {
   margin-left: 3%;
 }
 /*BarreRecherche*/
+
 .BarreRecherche {
   display: flex;
   align-items: center;
@@ -193,7 +194,7 @@ nav a:hover {
   flex-wrap: wrap;
   gap: 40px;
   justify-content: space-around;
-  margin-bottom: 16px;
+  margin-bottom: 0px;
 }
 
 .marseille_populaires h3 {
@@ -222,7 +223,7 @@ nav a:hover {
 
 .card_marseille {
   width: 33%;
-  height: 230px;
+  height: 220px;
   background-color: white;
   border-radius: 20px;
   padding: 3px;
@@ -264,7 +265,7 @@ nav a:hover {
 
 .image_card {
   border-radius: 20px 20px 0 0;
-  height: 130px;
+  height: 120px;
   width: 100%;
   object-fit: cover;
   object-position: 50% 50%;
@@ -301,6 +302,7 @@ nav a:hover {
 .populaires_prix {
   font-size: 14px;
 }
+
 .titre_populaires {
   width: 95%;
   display: flex;
@@ -321,9 +323,9 @@ nav a:hover {
 
 .populaires_card {
   width: 90%;
-  height: 150px;
-  max-height: 140px;
-  min-width: 15px;
+  height: 130px;
+  max-height: 130px;
+  min-width: 90%;
   display: flex;
   justify-content: flex-start;
   background-color: white;
@@ -380,11 +382,11 @@ nav a:hover {
   border-radius: 15px 15px 15px 15px;
   margin-top: 32px;
   margin-bottom: 32px;
-  padding-top: 0.5%;
+  padding-top: 0%;
 }
 
 .activites {
-  padding-bottom: 2%;
+  padding-bottom: 0%;
 }
 
 .activites h3 {
@@ -467,7 +469,7 @@ nav a:hover {
 
 .deux_petites {
   width: 100%;
-  height: 217.6px;
+  height: 219px;
   margin-top: 12px;
   margin-right: 25px;
   background-color: white;

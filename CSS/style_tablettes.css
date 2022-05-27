@@ -14,14 +14,6 @@
     display: none;
   }
 
-  .BarreRecherche input {
-    flex-basis: 190px;
-    border: 1px solid var(--lightgrey);
-    font-weight: bold;
-    overflow: auto;
-    padding: 18px;
-  }
-
   /*FILTRES*/
   .partiefiltres {
     align-items: flex-start;
@@ -35,10 +27,6 @@
   .marseille_populaires {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-between;
-    margin-top: 25px;
-    margin-bottom: 32px;
-    gap: 50px;
   }
 
   .marseille {
@@ -60,7 +48,6 @@
   .populaires_conteneur {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 20px;
     justify-content: space-around;
     padding-bottom: 5%;
@@ -86,38 +73,25 @@
     min-width: 15%;
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border-radius: 30px;
-    box-shadow: 0px 5px 6px #f2f2f2;
     padding: 2px;
-    flex: 1;
     gap: 10px;
   }
 
   .image_populaires {
     border-radius: 24px 24px 0 0;
     height: 130px;
-    width: 100%;
-    object-fit: cover;
-    object-position: 50% 50%;
   }
 
   .images {
     width: 100%;
-    height: 100%;
   }
 
   .populaires_title {
-    font-weight: bold;
-    padding-top: 2%;
     padding-bottom: 5%;
-    object-fit: fill;
   }
 
   .starts {
-    display: flex;
     padding-top: 0%;
-    font-size: 14px;
   }
 
   .lien_populaires {
@@ -126,23 +100,12 @@
   }
 
   .info_populaires {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     padding-top: 0%;
-    padding-left: 8%;
-    font-size: 16px;
-  }
-
-  .populaires_prix {
-    font-size: 14px;
   }
 
   /*Activités à Marseille*/
 
   .activites_conteneur {
-    display: flex;
-    flex-direction: row;
     width: 100%;
     height: 1030px;
     gap: 10px;
@@ -151,68 +114,23 @@
 
   .grand_card {
     width: 47%;
-    height: 480px;
-    margin-top: 10px;
-    margin-right: 2%;
-    background-color: white;
-    border-radius: 17px 17px 17px 17px;
-    box-shadow: 0px 5px 6px #f2f2f2;
-    object-fit: cover;
+    height: 478px;
   }
 
   .grandcard_image {
-    width: 100%;
-    height: 427.2px;
-    object-fit: cover;
-    object-position: bottom 50%;
-    border-radius: 15px 15px 0px 0px;
+    height: 425px;
   }
 
   .deux_cards {
     width: 47%;
-    display: flex;
-    flex-direction: column;
     gap: 20px;
-  }
-
-  .moyenne_card {
-    width: 100%;
-    height: 265px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: white;
-    border-radius: 17px 17px 17px 17px;
-    box-shadow: 0px 5px 6px #f2f2f2;
-    object-fit: cover;
-  }
-
-  .moyennecard_image {
-    width: 100%;
-    height: 215px;
-    object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
-    object-position: 100%;
-    object-fit: cover;
   }
 
   .petite_card {
     width: 96%;
     height: 172px;
-    margin-top: 10px;
-    background-color: white;
-    border-radius: 17px 17px 17px 17px;
-    box-shadow: 0px 5px 6px #f2f2f2;
     margin-left: 2%;
     margin-bottom: 10px;
-  }
-
-  .petitecard_image {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
-    object-position: 0% 34%;
-    object-fit: cover;
   }
 
   .deuxpetites_card {
@@ -223,12 +141,10 @@
   }
 
   .petitescards_image {
-    width: 100%;
-    height: 169.6px;
+    height: 165px;
   }
 
   .deux_petites {
-    width: 100%;
     height: 220px;
   }
 
