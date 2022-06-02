@@ -104,7 +104,6 @@ nav a:hover {
 }
 
 /*FILTRES*/
-
 .partiefiltres {
   display: flex;
   align-items: center;
@@ -113,12 +112,10 @@ nav a:hover {
   gap: 20px;
   flex-wrap: wrap;
 }
-
 .partiefiltres span {
   font-weight: bold;
   padding: 10px;
 }
-
 .liste_filtres {
   display: flex;
   gap: 20px;
@@ -130,18 +127,15 @@ nav a:hover {
   margin: -6px;
   padding: 14px;
 }
-
 .fa-child-reaching {
   font-size: 15px;
 }
-
 .filtres {
   background-color: white;
   border: 1px solid var(--lightgrey);
   border-radius: 30px;
   padding: 5px;
 }
-
 .filtres span {
   font-weight: bold;
   font-size: 14px;
